@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "509dfed7-b357-4b84-a9d3-b21559745628",
+		"name": "Interprobility Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34599301"
+	},
+	"item": [
+		{
+			"name": "Return HTML Document",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Return JSON Doc",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "{{$randomUserAgent}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://httpbin.org/json",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Robot Rules",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "{{$randomUserAgent}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://httpbin.org/robots.txt",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"robots.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return XML Doc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/xml",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"xml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://orange-mantra.greythr.com/uas/portal/auth/logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cookie",
+						"value": "_hjSessionUser_734540=eyJpZCI6ImE0ZWY5NjEzLWRkNTktNWFlZS1hZmY2LTI5YmE1NDJmYzIyMiIsImNyZWF0ZWQiOjE3MTY0Njc2MjUwMTAsImV4aXN0aW5nIjp0cnVlfQ==; _ga=GA1.1.1261898851.1716467625; amplitude_idundefinedgreythr.com=eyJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOm51bGwsImxhc3RFdmVudFRpbWUiOm51bGwsImV2ZW50SWQiOjAsImlkZW50aWZ5SWQiOjAsInNlcXVlbmNlTnVtYmVyIjowfQ==; _hjSession_734540=eyJpZCI6Ijg4NTg0OGRkLTQ3NmUtNGZlNi04MWQ1LTc1NWFjNmEwNDE1YiIsImMiOjE3MjUwMTI1NTc1MTEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhYzRqU2Vzc2lvbklkIjoiMzQ5NWZlODctOWUzNC00ODM2LWE0NjYtNTM2YTkyNDgxYmZjIn0sIm5iZiI6MTcyNTAxMjY4NCwiaWF0IjoxNzI1MDEyNjg0fQ.o_W_snLkRHSiEMT8RecyYQg_8xH_X2tekiO9MjAoYug; JSESSIONID=3D987D9ED04BCA318E4F0711B7FF7E52-n1; amplitude_id_68a53e4aaa416980b350edb16524b238greythr.com=eyJkZXZpY2VJZCI6IjBhMzMxY2U2LTM1YjctNDhlNy1iMDRiLWUzYjhkMjQzNWUzZFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTcyNTAxMjY5MTA4NSwibGFzdEV2ZW50VGltZSI6MTcyNTAxMzQzNzM3MywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9; _ga_CQZ203LZWP=GS1.1.1725012558.36.1.1725013446.0.0.0"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://orange-mantra.greythr.com/v3/portal/ess/home"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15"
+					}
+				],
+				"url": {
+					"raw": "https://orange-mantra.greythr.com/uas/portal/auth/logout",
+					"protocol": "https",
+					"host": [
+						"orange-mantra",
+						"greythr",
+						"com"
+					],
+					"path": [
+						"uas",
+						"portal",
+						"auth",
+						"logout"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://orange-mantra.greythr.com/uas/portal/auth/logout\" \r\n  -H \"accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\" \r\n  -H \"accept-language: en-US,en;q=0.9\" \r\n  -H \"cookie: _hjSessionUser_734540=eyJpZCI6ImE0ZWY5NjEzLWRkNTktNWFlZS1hZmY2LTI5YmE1NDJmYzIyMiIsImNyZWF0ZWQiOjE3MTY0Njc2MjUwMTAsImV4aXN0aW5nIjp0cnVlfQ==; _ga=GA1.1.1261898851.1716467625; amplitude_idundefinedgreythr.com=eyJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOm51bGwsImxhc3RFdmVudFRpbWUiOm51bGwsImV2ZW50SWQiOjAsImlkZW50aWZ5SWQiOjAsInNlcXVlbmNlTnVtYmVyIjowfQ==; _hjSession_734540=eyJpZCI6Ijg4NTg0OGRkLTQ3NmUtNGZlNi04MWQ1LTc1NWFjNmEwNDE1YiIsImMiOjE3MjUwMTI1NTc1MTEsInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MH0=; PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhYzRqU2Vzc2lvbklkIjoiMzQ5NWZlODctOWUzNC00ODM2LWE0NjYtNTM2YTkyNDgxYmZjIn0sIm5iZiI6MTcyNTAxMjY4NCwiaWF0IjoxNzI1MDEyNjg0fQ.o_W_snLkRHSiEMT8RecyYQg_8xH_X2tekiO9MjAoYug; JSESSIONID=3D987D9ED04BCA318E4F0711B7FF7E52-n1; amplitude_id_68a53e4aaa416980b350edb16524b238greythr.com=eyJkZXZpY2VJZCI6IjBhMzMxY2U2LTM1YjctNDhlNy1iMDRiLWUzYjhkMjQzNWUzZFIiLCJ1c2VySWQiOm51bGwsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTcyNTAxMjY5MTA4NSwibGFzdEV2ZW50VGltZSI6MTcyNTAxMzQzNzM3MywiZXZlbnRJZCI6MCwiaWRlbnRpZnlJZCI6MCwic2VxdWVuY2VOdW1iZXIiOjB9; _ga_CQZ203LZWP=GS1.1.1725012558.36.1.1725013446.0.0.0\" \r\n  -H \"priority: u=0, i\" \r\n  -H \"referer: https://orange-mantra.greythr.com/v3/portal/ess/home\" \r\n  -H \"sec-fetch-dest: document\" \r\n  -H \"sec-fetch-mode: navigate\" \r\n  -H \"sec-fetch-site: same-origin\" \r\n  -H \"sec-fetch-user: ?1\" \r\n  -H \"upgrade-insecure-requests: 1\" \r\n  -H \"user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Safari/605.1.15\""
+			},
+			"response": []
+		}
+	]
+}
